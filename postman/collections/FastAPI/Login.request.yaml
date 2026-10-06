@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{URL}}login"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: username
+      value: samwilson@gmail.com
+      disabled: false
+    - type: text
+      key: password
+      value: captain
+      disabled: false
+order: 4503589422124550

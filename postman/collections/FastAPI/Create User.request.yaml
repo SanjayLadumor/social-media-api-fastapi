@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{URL}}users"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"email\":\"samwilson@gmail.com\",\r
+
+    \    \"password\":\"captain\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
+order: 4503566061980912

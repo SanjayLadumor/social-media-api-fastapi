@@ -1,0 +1,9 @@
+$kind: http-request
+description: ""
+url: "{{URL}}posts"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
+order: 4498551015276351

@@ -1,0 +1,25 @@
+$kind: http-request
+description: ""
+url: "{{URL}}posts"
+method: POST
+headers:
+  - key: Authorization
+    value: "{{bearer_token_10t3}}"
+    disabled: true
+    description: ""
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\":\"Ghost Rider\",\r
+
+    \    \"content\":\"Starring Ryan Goshling\",\r
+
+    \    \"published\":true\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
+order: 1790830807824

@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{URL}}posts/4"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\":\"Dune Part Three\",\r
+
+    \    \"content\":\"18 Dec 2026\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
+order: 4503290664979929
