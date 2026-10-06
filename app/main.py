@@ -32,4 +32,4 @@ def test(db:Session = Depends(get_db)):
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": f"Visit : https://social-media-api-fastapi-lc2r.onrender.com/docs"}
