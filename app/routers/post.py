@@ -39,7 +39,7 @@ def get_posts(db : Session = Depends(get_db),user_id : int = Depends(get_current
 
 @router.post("/",status_code = status.HTTP_201_CREATED, response_model=PostResponse)
 def create_post(post : PostModel,db : Session = Depends(get_db), current_user : int = Depends(get_current_user)):
- 
+
     # cur.execute("""INSERT INTO posts (title,content,published) VALUES(%s,%s,%s) RETURNING *""",(post.title,post.content,post.published))
     # cur.execute(f"INSERT INTO posts (title,content,published) VALUES({post.title},{post.content},{post.published}) RETURNING *")
     # new_post = cur.fetchone()
